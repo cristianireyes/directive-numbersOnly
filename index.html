@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directive for AngularJs that only accepts numbers from 1 to 999">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristian Reyes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Example</title>
+</head>
+<body ng-controller="mainController">
+    <label>Test</label>
+    <div>
+        <input
+            type="text"
+            name="test"
+            ng-model="test"
+            numbers-only
+            />
+            {{test}}
+    </div>    
+</body>
+</html>
